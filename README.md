@@ -6,7 +6,7 @@ PubChemサイトのcovid19ページからプロジェクトで必要なデータ
 ## Steps
 
 ### Step1 スクレイピング
-＊まず上記のPubchemページへアクセスし、タブ"gene"をクリックする。そして、右側のSummaryというボタンを押し、csvファイルをダウンロードする。このcsvファイルにはcovid19に関連するすべての遺伝子情報が含まれており、PubChem独自のIDで管理されている。
+＊まず上記のPubchemページへアクセスし、タブ"gene"をクリックする。https://pubchem.ncbi.nlm.nih.gov/#query=covid-19&tab=gene　である。そして、右側のSummaryというボタンを押し、csvファイルをダウンロードする。このcsvファイルにはcovid19に関連するすべての遺伝子情報が含まれており、PubChem独自のIDで管理されている。
 
 ＊次に、rdf.pyのscrape()関数を実行する。ただし、chromedriverを使ったブラウザクローリングを行うスクレイピングのため、GooggleChromeとchromedriverのバージョンを同期しておく必要がある。また、chromedriverは実行する環境下のディレクトリで管理する必要がある。scrape()関数内で、絶対パスを通す必要がある。
 
